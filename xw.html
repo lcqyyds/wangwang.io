@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kali linux 安装</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>kali linux安装</h1>
+		<p>作者：lcq日期：2022.03.27</p>
+	</header>
+	<main>
+		<p>首先备用u盘利用镜像写入工具写入镜像，没有镜像可以去（https://kalilinux.org）下载。然后开始安装！电脑关机，我的是联想我先f12进入bios选择u盘启动，开始u盘启动安装依赖分区。</p>
+		<p>安装比较慢需要等待！！！！！！</p>
+		<p>完成后换源，我们可以用清华源，源在下面及地址</p>
+		<p>输入命令
+
+            vim /etc/apt/sources.list
+            
+            添加国内源
+            
+            #中科大
+            
+            deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+            
+            deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+            
+            #阿里云
+            
+            deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+            
+            deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+            
+            #清华大学
+            
+            deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
+            
+            deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
+            
+            #浙大
+            
+            deb http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free
+            
+            deb-src http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free
+            
+            #东软大学
+            
+            deb http://mirrors.neusoft.edu.cn/kali kali-rolling/main non-free contrib
+            
+            deb-src http://mirrors.neusoft.edu.cn/kali kali-rolling/main non-free contrib
+            
+            #官方源
+            
+            deb http://http.kali.org/kali kali-rolling main non-free contrib
+            
+            deb-src http://http.kali.org/kali kali-rolling main non-free contrib
+            
+            保存退出后
+            
+            更新
+            
+            apt update
+            ————————————————不要忘啦！
+        </p>
+	</main>
+	<footer>
+		<p>版权信息 lcq</p>
+	</footer>
+</body>
+</html>
+
+注：有许多细节没有说但是大概这样可以去看看视频。
